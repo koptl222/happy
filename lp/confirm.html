@@ -1,0 +1,72 @@
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>
+        Hvala za naročilo! 
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=320" />
+    <meta name="MobileOptimized" content="width=320" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link media="all" rel="stylesheet" type="text/css" href="confirm/order-style.css">
+</head>
+
+<body>
+    <script>
+        function $_GET(key) {
+            var s = window.location.search;
+            s = s.match(new RegExp(key + '=([^&=]+)'));
+            return s ? s[1] : '';
+        }
+
+        var site = $_GET('version')
+
+        if (site.replace(/(v\d{1,3})$/, '') === 'sl39') {
+            document.write('<scr' + 'ipt src="39/counter.js"></scr' + 'ipt>');
+        }
+        if (site.replace(/(v\d{1,3})$/, '') === 'sl39prelp') {
+            document.write('<scr' + 'ipt src="39/prelp/counter.js"></scr' + 'ipt>');
+        }
+    </script>
+    <div id="wrapper">
+        <div class="container">
+            <span class="decoration">
+            </span>
+            <div class="order-block">
+                <div class="text-holder">
+                    <h2>Hvala za naročilo!  </h2>
+                    <p>Kmalu boste prejeli klic z neznane številke. Prepričajte se, da nimate aktivnih aplikacij, ki blokirajo takšne klice!  </p>
+                </div>
+                <div class="text-box">
+                    <h2>
+                        Sodelujte v   <span>akciji.</span>
+                    </h2>
+                    <p>
+                        Če želite sodelovati v akciji in preveriti stanje svojega naročila, vpišite svoj e-poštni naslov v spodnje polje in kliknite »Shrani«. Vpišite svoj e-poštni naslov
+                    </p>
+                    <form class="order-form" id="email_form" action="#">
+                        <fieldset>
+                            <div class="text">
+                                <input type="email" id="email" placeholder="Vnesi e-pošto" name="email">
+                            </div>
+                            <input data-error="Vnesi e-pošto" data-success="Hvala za sodelovanje! Vaša e-pošta je shranjena!"
+                                class="btn-save" type="submit" value="Shrani">
+                        </fieldset>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
+    <script src="https://click.lucky.online/js/leadprofit.js"></script>
+    <script>$(document).ready(function () { $(document).leadprofitConfirm(); });</script>
+</body>
+
+</html>
